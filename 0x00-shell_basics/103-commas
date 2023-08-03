@@ -1,0 +1,3 @@
+#!/bin/bash
+ls -aF1 | grep -E '^[0-9A-Za-z]' | sort -d | sed '/^\.\.$/d' | sed '/^\.$/d' | tr '\n' ',' && echo
+
